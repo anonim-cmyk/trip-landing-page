@@ -1,6 +1,21 @@
-const Button = ({ text, className }) => {
+const Button = ({ id, text, className }) => {
   return (
-    <a href="" className={`${className ?? ""} cta-wrapper`}>
+    <a
+      onClick={(e) => {
+        e.preventDefault();
+
+        const target = document.getElementById("gallery-section");
+
+        if (target && id) {
+          const offset = window.innerHeight * 0.15;
+          const top =
+            target.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+      }}
+      className={`${className ?? ""} cta-wrapper`}
+    >
       <div className="cta-button group">
         <div className="absolute -right-10 top-1/2 -translate-y-1/2 origin-center w-[120%] h-[120%] group-hover:size-10 group-hover:right-2 rounded-full bg-white-50 transition-all duration-500" />
         <p className="uppercase md:text-lg text-black group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5 transition-all duration-500 group-hover:text-white-50">

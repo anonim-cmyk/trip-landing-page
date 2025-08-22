@@ -1,6 +1,6 @@
 const navLink = [
   {
-    name: "About",
+    name: "My Story",
     link: "#trip-timeline",
   },
   {

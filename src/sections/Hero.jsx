@@ -58,7 +58,8 @@ const Hero = () => {
           </p>
 
           <Button
-            text="See My Documention"
+            id="button"
+            text="See My Gallery"
             className="w-60 h-12 md:w-80 md:h-16"
           />
         </div>
