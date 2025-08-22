@@ -4,29 +4,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GlowCard from "../components/GlowCard";
 import TitleHeader from "../components/TitleHeader";
+import { timeLineGallery } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
-
-const timeLineGallery = [
-  {
-    id: 1,
-    title: "Trip ke Gunung Bromo",
-    desc: "Menikmati sunrise di puncak gunung dengan suasana yang menenangkan.",
-    imgPath: "/images/image-1.jpg",
-  },
-  {
-    id: 2,
-    title: "Liburan ke Bali",
-    desc: "Bersantai di pantai Kuta dan mengunjungi Pura Tanah Lot.",
-    imgPath: "/images/image-2.jpg",
-  },
-  {
-    id: 3,
-    title: "Eksplorasi Yogyakarta",
-    desc: "Mengunjungi Candi Borobudur, Malioboro, dan kuliner khas Jogja.",
-    imgPath: "/images/image-3.jpg",
-  },
-];
 
 const TripTimeline = () => {
   const containerRef = useRef(null);
@@ -90,7 +70,7 @@ const TripTimeline = () => {
       ref={containerRef}
     >
       <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader title="My TimeLine" sub="See My Trip" />
+        <TitleHeader title="Trip Timeline" sub="A Glimpse of Our Journey" />
 
         <div className="mt-20 relative">
           {/* Garis timeline */}

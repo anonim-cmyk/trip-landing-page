@@ -30,6 +30,7 @@ const Hero = () => {
 
   return (
     <section
+      id="hero"
       ref={sectionRef}
       className="pt-40 max-lg:pt-32 max-md:pt-24 overflow-hidden"
     >

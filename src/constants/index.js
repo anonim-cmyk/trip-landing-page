@@ -1,30 +1,32 @@
 const navLink = [
   {
     name: "About",
-    link: "#about",
+    link: "#trip-timeline",
   },
   {
     name: "Gallery",
-    link: "#gallery",
+    link: "#gallery-section",
   },
 ];
 
 const timeLineGallery = [
   {
     id: 1,
+    title: "Braga",
+    desc: "Suasana klasik dengan nuansa kota tua yang ikonik.",
     imgPath: "/images/image-1.jpg",
   },
   {
     id: 2,
+    title: "Seko",
+    desc: "Spot hidden gem dengan pemandangan alam yang menenangkan. Bolehh..!!!",
     imgPath: "/images/image-2.jpg",
   },
   {
     id: 3,
+    title: "Warung Kopi Gunung",
+    desc: "Ngopi sambil menikmati udara segar pegunungan.",
     imgPath: "/images/image-3.jpg",
-  },
-  {
-    id: 4,
-    imgPath: "/images/image-4.jpg",
   },
 ];
 
