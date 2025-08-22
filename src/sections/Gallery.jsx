@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { images } from "../constants";
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,7 +69,7 @@ const Gallery = () => {
       className="w-full md:mt-40 mt-20 px-5 md:px-10 xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">
-        <h2 className="text-3xl font-bold text-center">My Gallery</h2>
+        <TitleHeader title="My Gallery" sub="Memories in Frames" />
 
         {/* Grid Gallery */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
